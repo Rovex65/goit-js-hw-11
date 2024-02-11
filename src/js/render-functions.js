@@ -15,7 +15,7 @@ function templateCard({
 }) {
   return `      
       <li class="card">
-        <a h ="${largeImageURL}">
+        <a href ="${largeImageURL}">
         <img class="card-img" src="${webformatURL}" alt="${tags}" >
         <ul class="card-data">
           <li><h3>Likes</h3><p>${likes}</p></li>
