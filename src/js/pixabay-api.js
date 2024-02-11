@@ -4,10 +4,10 @@ export class PixabayApi {
     this.API_KEY = '42308857-af265c382d366c65500552078';
   }
 
-  getImages(userData) {
+  getImages(userQuery) {
     const searchParams = new URLSearchParams({
       key: this.API_KEY,
-      q: userData,
+      q: userQuery,
       image_type: 'photo',
       orientation: 'horizontal',
       safesearch: true,

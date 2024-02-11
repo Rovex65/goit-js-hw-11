@@ -16,7 +16,7 @@ function onSearchSubmit(event) {
   toggleLoader();
 
   pixabayApi
-    .getImages(event.target.userData.value)
+    .getImages(event.target.query.value)
     .then(data => {
       const images = data.hits;
       if (!images.length) {
